@@ -1,2 +1,3 @@
-check out the website her
+check out the website here
+
 https://happy7054.github.io/birthday-day-finder/
