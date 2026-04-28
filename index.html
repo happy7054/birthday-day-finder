@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Day Finder</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Floating particles -->
+  <div class="particles"></div>
+
+  <main class="screen">
+
+    <section class="hero">
+      <h1>Birthday Day Finder</h1>
+      <p id="intro-text" class="intro"></p>
+    </section>
+
+    <section class="controls">
+      <div class="dropdowns">
+        <select id="month"></select>
+        <select id="day"></select>
+        <select id="year"></select>
+      </div>
+
+      <button id="find-btn" disabled>FIND</button>
+    </section>
+
+    <section class="result hidden">
+      <h1 id="day-result"></h1>
+      <p id="quote-result"></p>
+    </section>
+
+  </main>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti"></canvas>
+
+  <!-- Sound -->
+  <audio id="pop-sound" src="resources/confetti-pop.mp3" preload="auto"></audio>
+  <audio id="bg-music" loop>
+  <source src="resources/background.mp3" type="audio/mpeg">
+    </audio>
+  <div class="music-toggle">
+  <span class="music-label">🎵</span>
+  <div id="music-switch" class="switch on">
+    <div class="knob"></div>
+  </div>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
